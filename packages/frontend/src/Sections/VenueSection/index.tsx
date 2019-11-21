@@ -48,6 +48,7 @@ const description = (name : string|undefined)=>{
     if ( name === "subway" )
         return (
             <div>
+<<<<<<< HEAD
             <div>
             <h2 className="SubwayMenu">Menu
                 <ul>
@@ -58,11 +59,38 @@ const description = (name : string|undefined)=>{
                 </ul>
             </h2>
             </div>
+=======
+
+>>>>>>> f68cd53ca515af4c0669e707d371da71251c2329
                 <p> Located on the first floor in the Angell College Center past the College Center desk. Fresh subs, salads and soups - eat in or take out.</p> 
                  <img className="Subwaypicture"  
                 src="http://cr.citymall.net/wp-content/uploads/2014/09/logoArtboard-21-copy-344x260.png" 
                 alt="Subway"></img>
+<<<<<<< HEAD
             
+=======
+            <div>
+            <h2 className="SubwayMenu">Menu</h2>
+            <h3> 
+                <ol className="SubwayMenuList">
+                    <li>Coffee</li>
+                        <ul>
+                            <li>black hot drink</li>
+                        </ul>
+                    <li>Tea</li>
+                        <ul>
+                            <li>Black tea</li>
+                            <li>Green tea</li>
+                        </ul>
+                    <li>Milk</li>
+                        <ul>
+                            <li>white cold drink</li>
+                        </ul>
+                    <li>Bagal</li>
+                </ol>
+            </h3>
+            </div>
+>>>>>>> f68cd53ca515af4c0669e707d371da71251c2329
             </div>
         );
     if ( name === "Little Al's" )
@@ -285,6 +313,7 @@ return (
         <div className="venues-section">
             <h1 className={name}>{name}</h1>
             <p className="description">{description(name)}</p>
+<<<<<<< HEAD
             <ul>
                  <li><a className="active" href="/home">Home</a></li>
                  <li><a href="/griddles">Griddles</a></li>
@@ -301,6 +330,8 @@ return (
                  <li><a href="/subway">About</a></li>
 
             </ul>
+=======
+>>>>>>> f68cd53ca515af4c0669e707d371da71251c2329
         </div>
     );
     

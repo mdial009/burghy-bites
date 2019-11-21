@@ -19,6 +19,17 @@ p{
 }
 .logo {
     color: blue;
+<<<<<<< HEAD
+=======
+}
+.venues-section{
+
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+.venues-section.description{
+    
+>>>>>>> f68cd53ca515af4c0669e707d371da71251c2329
 
 }
 .description{
@@ -78,6 +89,7 @@ p{
     color: #FFC600;
 
 }
+<<<<<<< HEAD
 .Subwaypicture{
     border-radius: 50%;
     border: 1px solid #ddd;
@@ -86,3 +98,5 @@ p{
   width: 150px;
 
 }
+=======
+>>>>>>> f68cd53ca515af4c0669e707d371da71251c2329
