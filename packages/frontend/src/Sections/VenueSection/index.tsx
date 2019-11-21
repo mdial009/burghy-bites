@@ -2,7 +2,19 @@ import React from 'react';
 import {useParams} from 'react-router-dom';
 import './index.scss';
 
+/*const name = (name : string|symbol|undefined)=>{
+    if ( name === "venues" )
+        return(
+            <p>hhh</p>
+        )
+    }; */
 const description = (name : string|undefined)=>{
+    if ( name === "venues" )
+        return(
+            <div>
+                <p>feefef</p>
+            </div>
+        );
     if ( name === "clinton" )
         return (
             <div>
@@ -36,31 +48,21 @@ const description = (name : string|undefined)=>{
     if ( name === "subway" )
         return (
             <div>
+            <div>
+            <h2 className="SubwayMenu">Menu
+                <ul>
+                    <li><a className="active" href="">Home</a></li>
+                    <li><a href="">Coffee</a></li>
+                    <li><a href="">Tea</a></li>
+                    <li><a href="">Milk</a></li>
+                </ul>
+            </h2>
+            </div>
                 <p> Located on the first floor in the Angell College Center past the College Center desk. Fresh subs, salads and soups - eat in or take out.</p> 
-                 <img   
+                 <img className="Subwaypicture"  
                 src="http://cr.citymall.net/wp-content/uploads/2014/09/logoArtboard-21-copy-344x260.png" 
                 alt="Subway"></img>
-            <div>
-            <h2 className="SubwayMenu">Menu</h2>
-            <h3> 
-                <ol className="SubwayMenuList">
-                    <li>Coffee</li>
-                        <ul>
-                            <li>black hot drink</li>
-                        </ul>
-                    <li>Tea</li>
-                        <ul>
-                            <li>Black tea</li>
-                            <li>Green tea</li>
-                        </ul>
-                    <li>Milk</li>
-                        <ul>
-                            <li>white cold drink</li>
-                        </ul>
-                    <li>Bagal</li>
-                </ol>
-            </h3>
-            </div>
+            
             </div>
         );
     if ( name === "Little Al's" )
@@ -275,15 +277,32 @@ const description = (name : string|undefined)=>{
         );
     return null;
 };
-const VenueSection: React.FC = () =>{
+const VenueSection:React.FC = () =>{
     let {name}=useParams();
     
-    return (
+return (
+        
         <div className="venues-section">
             <h1 className={name}>{name}</h1>
             <p className="description">{description(name)}</p>
+            <ul>
+                 <li><a className="active" href="/home">Home</a></li>
+                 <li><a href="/griddles">Griddles</a></li>
+                 <li><a href="/clinton">Clinton</a></li>
+                 <li><a href="/subway">Subway</a></li>
+                 <li><a href="/subway">Little Al's</a></li>
+                 <li><a href="/subway">Einstien Bros. Bagels</a></li>
+                 <li><a href="/subway">Sundowner</a></li>
+                 <li><a href="/subway">SONO</a></li>
+                 <li><a href="/subway">Scoops</a></li>
+                 <li><a href="/subway">Tim Horton's</a></li>
+                 <li><a href="/subway">Samuel D's</a></li>
+                 <li><a href="/subway">About</a></li>
+                 <li><a href="/subway">About</a></li>
+
+            </ul>
         </div>
     );
-
+    
 };
 export default VenueSection;
