@@ -12,7 +12,7 @@
   "dependencies": {
     "@michaelgatesdev/common": "^1.1.2",
     "@michaelgatesdev/common-io": "^1.0.2",
-    "@types/cors": "^2.8.6",
+    "@types/cors": "^2.8.11",
     "cardboard-config": "^1.0.3",
     "cookie-parser": "~1.4.3",
     "cors": "^2.8.5",
